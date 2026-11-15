@@ -1,7 +1,8 @@
 # YMH 219 - TCP/IP Çoklu İstemcili Sohbet Uygulaması (ChatApp)
 
 **Ders:** YMH 219 - Nesne Tabanlı Programlama (C# .NET 8.0 WinForms)  
-**Geliştirici:** [agumusfu](https://github.com/agumusfu)
+**Öğrenci:** Abdullah Gümüş (`agumusfu`)  
+**Öğrenci Numarası:** 250542016
 
 ---
 
@@ -93,3 +94,11 @@ dotnet run --project src/ChatApp.Client/ChatApp.Client.csproj
 2. **İstemci Bağlantısı:** `ChatApp.Client` penceresinde Sunucu IP (`127.0.0.1`), Port (`5000`) ve benzersiz bir **Kullanıcı Adı** girerek **Bağlan** butonuna tıklayın.
 3. **Sohbet:** Alt kısımdaki metin kutusuna mesaj yazıp `Enter` tuşuna basın veya **Gönder** butonunu kullanın. Özel mesaj göndermek için **Özel Mesaj** kutucuğunu işaretleyip alıcıyı seçin.
 4. **Geçmişi Kaydetme:** İstediğiniz zaman **Geçmişi Kaydet** / **Logları Kaydet** butonları ile sohbet veya sunucu kayıtlarını `.txt` dosyasına kaydedin.
+
+---
+
+## Bilinen Sınırlamalar ve Geliştirme Notları
+
+- Uygulama yerel ağ (LAN) veya `localhost` (`127.0.0.1`) üzerinden şifrelenmemiş TCP/IP iletişimi kullanır; ders kapsamında eğitim amaçlı tasarlanmıştır.
+- Yerel ağda farklı bilgisayarlardan bağlanabilmek için sunucunun dinlediği portun (varsayılan `5000`) Windows Güvenlik Duvarı üzerinden izinli olması gerekir.
+- Sunucu kapatıldığında veya ağ kesintisi yaşandığında istemciler bağlantı kopmasını yakalayarak kullanıcıyı bilgilendirir ve yeniden bağlanmaya hazır hale gelir.

@@ -124,9 +124,10 @@ partial class ClientForm
 
         // splitMain
         splitMain.Dock = DockStyle.Fill;
-        splitMain.SplitterDistance = 180;
+        splitMain.Size = new Size(1000, 560);
         splitMain.Panel1MinSize = 150;
-        splitMain.Panel2MinSize = 400;
+        splitMain.Panel2MinSize = 300;
+        splitMain.SplitterDistance = 190;
 
         // pnlUsers (left panel)
         pnlUsers.Dock = DockStyle.Fill;

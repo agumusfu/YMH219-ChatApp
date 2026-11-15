@@ -110,9 +110,9 @@ partial class ServerForm
         btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         btnStart.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
         btnStart.ForeColor = System.Drawing.Color.White;
-        btnStart.Location = new System.Drawing.Point(145, 11);
+        btnStart.Location = new System.Drawing.Point(140, 10);
         btnStart.Name = "btnStart";
-        btnStart.Size = new System.Drawing.Size(135, 32);
+        btnStart.Size = new System.Drawing.Size(165, 34);
         btnStart.TabIndex = 2;
         btnStart.Text = "▶ Sunucuyu Başlat";
         btnStart.UseVisualStyleBackColor = false;
@@ -127,9 +127,9 @@ partial class ServerForm
         btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         btnStop.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
         btnStop.ForeColor = System.Drawing.Color.White;
-        btnStop.Location = new System.Drawing.Point(288, 11);
+        btnStop.Location = new System.Drawing.Point(313, 10);
         btnStop.Name = "btnStop";
-        btnStop.Size = new System.Drawing.Size(135, 32);
+        btnStop.Size = new System.Drawing.Size(170, 34);
         btnStop.TabIndex = 3;
         btnStop.Text = "⏹ Sunucuyu Durdur";
         btnStop.UseVisualStyleBackColor = false;
@@ -143,9 +143,9 @@ partial class ServerForm
         btnSaveLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         btnSaveLogs.Font = new System.Drawing.Font("Segoe UI Semibold", 9.5F, System.Drawing.FontStyle.Bold);
         btnSaveLogs.ForeColor = System.Drawing.Color.White;
-        btnSaveLogs.Location = new System.Drawing.Point(432, 11);
+        btnSaveLogs.Location = new System.Drawing.Point(491, 10);
         btnSaveLogs.Name = "btnSaveLogs";
-        btnSaveLogs.Size = new System.Drawing.Size(150, 32);
+        btnSaveLogs.Size = new System.Drawing.Size(185, 34);
         btnSaveLogs.TabIndex = 4;
         btnSaveLogs.Text = "💾 Logları Kaydet (.txt)";
         btnSaveLogs.UseVisualStyleBackColor = false;
@@ -157,7 +157,7 @@ partial class ServerForm
         lblStatusBadge.BackColor = System.Drawing.Color.FromArgb(149, 165, 166);
         lblStatusBadge.Font = new System.Drawing.Font("Segoe UI Bold", 9.5F);
         lblStatusBadge.ForeColor = System.Drawing.Color.White;
-        lblStatusBadge.Location = new System.Drawing.Point(676, 12);
+        lblStatusBadge.Location = new System.Drawing.Point(710, 11);
         lblStatusBadge.Name = "lblStatusBadge";
         lblStatusBadge.Size = new System.Drawing.Size(212, 30);
         lblStatusBadge.TabIndex = 5;
@@ -318,11 +318,11 @@ partial class ServerForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(900, 558);
+        ClientSize = new System.Drawing.Size(960, 580);
         Controls.Add(splitContainer);
         Controls.Add(statusStrip);
         Controls.Add(topPanel);
-        MinimumSize = new System.Drawing.Size(760, 480);
+        MinimumSize = new System.Drawing.Size(920, 500);
         Name = "ServerForm";
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "YMH219 - TCP Chat Sunucusu (Server)";

@@ -14,6 +14,12 @@ public partial class ServerForm : Form
     public ServerForm()
     {
         InitializeComponent();
+        try
+        {
+            if (!string.IsNullOrEmpty(Environment.ProcessPath))
+                this.Icon = Icon.ExtractAssociatedIcon(Environment.ProcessPath);
+        }
+        catch { }
 
         _server = new TcpChatServer();
         _historyService = new ChatHistoryService();

@@ -14,6 +14,12 @@ public partial class ClientForm : Form
     public ClientForm()
     {
         InitializeComponent();
+        try
+        {
+            if (!string.IsNullOrEmpty(Environment.ProcessPath))
+                this.Icon = Icon.ExtractAssociatedIcon(Environment.ProcessPath);
+        }
+        catch { }
     }
 
     // ─── Connect / Disconnect ───────────────────────────────────────────────
